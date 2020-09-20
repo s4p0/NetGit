@@ -1,0 +1,10 @@
+﻿@page
+@model NetGit.Web.Pages.Repositories.IndexModel
+
+<a class="btn btn-primary" asp-page="./Create">Create</a>
+<ul>
+    @foreach (var item in Model.Repositories)
+    {
+        <li>@item.Name</li>
+    }
+</ul>
